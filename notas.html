@@ -1,0 +1,23 @@
+<script>
+    //Peça para o aluno informar as notas que obteve nos três trimestres.
+    //Calcule a média e apresente a seguinte mensagem: Se nota for menor que 4: Reprovado. Se nota for menor que 6: Exame. Se nota for acima de 6: Aprovado
+    //*
+    //Entrada
+    const nota = Number(prompt("Informe sua primeira nota do trimestre."));
+    const nota2 = Number(prompt("Informe sua segunda nota do trimestre."));
+    const nota3 = Number(prompt("Informe sua terceira nota do trimestre."));
+    //Processamento
+    const calculo = Number(nota) + Number(nota2) + Number(nota3)
+    const divisao = Number(calculo) / 3
+    //Saída
+    if (divisao < 4) {
+        alert('Reprovado.')
+    
+    }
+    else if (divisao < 6){
+        alert('Exame.')
+    }
+    else{
+        alert('Aprovado.')
+    }
+</script>
